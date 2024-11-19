@@ -58,3 +58,4 @@ my_info* function() {
   spin_unlock_bh(&tbl_lock);
 }
 ```
+//spinlock_bh will disable the bottom-halves/softirqs.
