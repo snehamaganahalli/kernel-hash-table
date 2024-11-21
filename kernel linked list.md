@@ -1,5 +1,7 @@
 **Kernel linked list**
 
+Example:
+
 Initialize the list as below
 ```
 static LIST_HEAD(rtm_neigh_event_list);
@@ -7,8 +9,8 @@ static LIST_HEAD(rtm_neigh_event_list);
 
 ```
 struct vxlan_rtm_neigh_event_data {
-   union vxlan_addr rip;
-   uint8_t event;
+   union vxlan_addr rip; //remote IP address
+   uint8_t event; // Add new neighbor/ del new neighbor event
    struct list_head rtm_event_list;
 }
 ```
