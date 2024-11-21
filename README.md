@@ -47,6 +47,9 @@ DEFINE_SPINLOCK(tbl_lock);
 or static DEFINE_SPINLOCK(tbl_lock);
 
 my_info* function() {
+  struct my_info *curr;
+  struct hlist_node *temp;
+
   spin_lock_bh(&tbl_lock);
   hash_for_each_safe(tbl, bkt, temp, curr, node) {
     if (curr->some_data == 5) {
