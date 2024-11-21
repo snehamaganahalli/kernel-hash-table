@@ -1,6 +1,6 @@
 **Kernel linked list**
 
-Example:
+**Example:**
 
 Initialize the list as below
 ```
