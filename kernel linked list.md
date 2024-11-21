@@ -13,8 +13,8 @@ struct vxlan_rtm_neigh_event_data {
 }
 ```
 
+Get the first entry from the linked list:
 ``
-//give the first entry.
 struct vxlan_rtm_neigh_event_data *rtm_neigh_event_info = list_first_entry(&rtm_neigh_event_list, struct vxlan_rtm_neigh_event_data, rtm_event_list);
 
 i.e list_first_entry(list, type, member);
